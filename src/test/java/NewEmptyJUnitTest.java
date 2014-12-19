@@ -19,7 +19,7 @@ public class NewEmptyJUnitTest extends ManageFerriesTest{
     
 //    private FerryAdminManager Manager = new FerryAdminManager();
     
-    
+    // YOLO
     @Override
     @Before
     public void setUp() {
