@@ -16,7 +16,7 @@ import org.junit.Before;
  *
  * @author Kasper
  */
-public class NewEmptyJUnitTest extends AddScheduleTest{
+public class NewEmptyJUnitTest{// extends AddScheduleTest{
     
 //    private FerryAdminManager Manager = new FerryAdminManager();
     

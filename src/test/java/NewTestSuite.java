@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 
+import dk.cphbusiness.controller.FerryAdminManager;
 import dk.cphbusiness.schedule.AddScheduleTest;
+import dk.cphbusiness.test.FerryManagerHolder;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -22,6 +24,7 @@ public class NewTestSuite {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
+                FerryManagerHolder.manager = new FerryAdminManager(new DummyEntityManager());
     }
 
     @AfterClass
