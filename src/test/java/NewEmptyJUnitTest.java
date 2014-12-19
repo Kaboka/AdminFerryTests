@@ -4,9 +4,10 @@
  * and open the template in the editor.
  */
 
-import com.mycompany.ferryadminbackend.FerryAdminManager;
+import dk.cphbusiness.controller.FerryAdminManager;
 import dk.cphbusiness.entities.Ferry;
 import dk.cphbusiness.ferry.ManageFerriesTest;
+import dk.cphbusiness.schedule.AddScheduleTest;
 import dk.cphbusiness.test.FerryManagerHolder;
 import javax.ejb.embeddable.EJBContainer;
 import org.junit.Before;
@@ -15,17 +16,17 @@ import org.junit.Before;
  *
  * @author Kasper
  */
-public class NewEmptyJUnitTest extends ManageFerriesTest{
+public class NewEmptyJUnitTest extends AddScheduleTest{
     
 //    private FerryAdminManager Manager = new FerryAdminManager();
     
     // YOLO
-    @Override
+/*    @Override
     @Before
     public void setUp() {
        FerryManagerHolder.manager = new FerryAdminManager(new DummyEntityManager());
-        super.setUp(); //To change body of generated methods, choose Tools | Templates.*/
-    }
+       super.setUp(); //To change body of generated methods, choose Tools | Templates.
+    }*/
     /*@Mock
     EntityManager em;*/
     

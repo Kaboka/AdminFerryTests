@@ -1,5 +1,12 @@
 
+import dk.cphbusiness.entities.Departure;
+import dk.cphbusiness.entities.FerryConfig;
+import dk.cphbusiness.entities.Harbour;
+import dk.cphbusiness.entities.Price;
+import dk.cphbusiness.entities.Route;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +31,23 @@ public class DummyQueryRoute implements Query{
 
     @Override
     public List getResultList() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        List<Route> routes = new ArrayList<>();
+        //public Route(Integer id, Integer duration, Harbour idOrigin, Harbour idDestination, 
+        //Collection<Departure> departureCollection, Collection<Price> priceCollection) {
+        Collection<FerryConfig> configs = new ArrayList<>();
+        configs.add(new FerryConfig());
+        Collection<Departure> departures = new ArrayList<>();
+        //public Departure(Integer id, String departureTime, Date departureDate, Collection<FerryConfig> ferryConfigCollection, 
+        //Route route, Collection<Reservation> reservationCollection) {
+        departures.add(new Departure(1, "2000", new Date(), configs, new Route(), null));
+        Collection<Price> prices = new ArrayList<>();
+        prices.add(new Price(1,600.0));
+        Harbour origin = new Harbour(1);
+        origin.setName("origin");
+        Harbour destination = new Harbour(2);
+        destination.setName("destination");
+        routes.add(new Route(1,200,origin,destination,departures,prices));
+        return routes;
     }
 
     @Override
