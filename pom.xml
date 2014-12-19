@@ -50,7 +50,7 @@
                 <version>2.12.4</version>
                 <configuration>
                     <includes>
-                        <include>NewTestSuite.java</include>
+                        <include>FerryTestSuite.java</include>
                     </includes>
                 </configuration>
             </plugin>
