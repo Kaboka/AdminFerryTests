@@ -20,7 +20,7 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({AddScheduleTest.class})
-public class NewTestSuite {
+public class FerryTestSuite {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
