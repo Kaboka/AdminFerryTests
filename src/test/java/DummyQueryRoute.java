@@ -1,9 +1,9 @@
 
-import dk.cphbusiness.entities.Departure;
-import dk.cphbusiness.entities.FerryConfig;
-import dk.cphbusiness.entities.Harbour;
-import dk.cphbusiness.entities.Price;
-import dk.cphbusiness.entities.Route;
+import cphbusiness.entities.Departure;
+import cphbusiness.entities.FerryConfig;
+import cphbusiness.entities.Harbour;
+import cphbusiness.entities.Price;
+import cphbusiness.entities.Route;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;

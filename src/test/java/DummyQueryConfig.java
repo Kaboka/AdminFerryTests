@@ -1,5 +1,5 @@
 
-import dk.cphbusiness.entities.FerryConfig;
+import cphbusiness.entities.FerryConfig;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
